@@ -1,0 +1,112 @@
+/* this is how to write invisible notes in css*/
+
+/*
+<header>
+	<img src="img/profile.jpg">
+	<h1>Wreck-it Ralph</h1>
+</header>
+*/
+
+html, body{
+	background-color: #e69aa6;
+	font-family: Helvetica, sans-serif; 
+	margin: 0; /*removes the white border around the page in chrome, if this doesn't work can try padding*/
+}
+
+header{
+	background-color: #e37485;
+	padding: 40px; /*here all padding are the same*/
+	/* 
+	  > if we want all different sizes padding: (top)40px (left)20px (buttom)10px (right)90px;
+	  > if we want top buttom and left right the same padding: (top/buttom)40px (left/right)20px;
+	*/
+	text-align: center;
+}
+
+h1{
+	font-size: 90px;
+	color: white;
+	text-shadow: 0 10px 20px black; /*text-shadow: (xvalue)0 (yvalue)40px (blur amount)20px (colour shadow)black;*/
+	margin: 0;
+	text-transform: uppercase;
+}
+
+header img{
+	width:300px;
+	border: 10px solid white;
+	box-shadow: 0 10px 20px black; /* same logic as text-shadow*/
+}
+
+h2{
+	font-size: 40px;
+	margin-bottom: 0;
+}
+
+.content{
+	max-width: 900px;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+}
+
+img.big-image{
+	max-width: 100%; /*the image will take the max width possible in the browser depending on the size and responsive with the screensize"*/
+}
+
+
+p{
+	margin: 20px auto;
+	max-width: 600px;
+}
+
+p.caption{
+	margin-top: 0;
+	font.size: 16px;
+	color: lightgrey;
+	font-style: italic;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	list-style: inside;
+}
+
+li{
+	list-style: none;
+	background-color: #e08b98;
+	margin: 5px 0;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+a{
+	color: white;
+	background-color: #edaf53;
+	text-decoration: none;
+}
+
+a:hover{
+	background-color: #c97a12;
+}
+
+footer{
+	margin-top: 20px; 
+	padding: 40px 20px;
+	background-color: #e37485;
+}
+
+footer ul{
+	text-align: center;
+}
+
+footer ul li{
+	display: inline-block;
+	background-color: #db5e73;
+	margin: 0 5px;
+	padding: 5px;
+	border-radius: 10px;
+
+}
